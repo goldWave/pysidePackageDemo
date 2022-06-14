@@ -13,4 +13,4 @@
 1. 创建虚拟环境： `python -m venv packenv`
 2. 加载虚拟环境: `call packenv\scripts\activate.bat`
 3. 添加自定义依赖： `pip3 install PySide2 PyInstaller`
-4. 进行打包： `pyinstaller -w pymain.py`
+4. 进行打包： `pyinstaller -w -F pymain.py --add-data="formmain.ui;."`
